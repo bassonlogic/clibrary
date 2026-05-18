@@ -1,0 +1,9 @@
+# mylibraryConfig.cmake.in
+# This file is filled in by CMake's configure_package_config_file().
+# It is installed alongside the library so that find_package(mylibrary) works.
+
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/bassonTargets.cmake")
+
+check_required_components(basson)
